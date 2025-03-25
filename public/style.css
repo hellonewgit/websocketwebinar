@@ -1,0 +1,158 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Блок чата */
+.chat {
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка чата */
+.chat__header {
+    background-color: #4a89dc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.chat__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Блок логина */
+.login {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login_hidden {
+    display: none;
+}
+
+.login__title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login__form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.login__button {
+    padding: 10px 15px;
+    background-color: #4a89dc;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login__button:hover {
+    background-color: #3a70b8;
+}
+
+/* Интерфейс чата */
+.chat__interface {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat__interface_hidden {
+    display: none;
+}
+
+/* Сообщения */
+.chat__messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    word-wrap: break-word;
+}
+
+.message__username {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Системные сообщения */
+.system-message {
+    text-align: center;
+    color: #666;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Область ввода сообщения */
+.chat__input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.chat__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.chat__button {
+    padding: 10px 15px;
+    background-color: #4a89dc;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chat__button:hover {
+    background-color: #3a70b8;
+}

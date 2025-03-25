@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat__header">
+            <h1 class="chat__title">Супер крутой чат</h1>
+        </div>
+
+        <!-- Форма для входа в чат -->
+        <div id="login-form" class="login">
+            <h2 class="login__title">Введите ваше имя</h2>
+            <div class="login__form">
+                <input id="username-input" class="login__input" type="text" placeholder="Ваше Имя">
+                <button id="join-btn" class="login__button">Войти</button>
+            </div>
+        </div>
+
+        <!-- Основной интерфейс чата (появится после входа) -->
+        <div id="chat-interface" class="chat__interface chat__interface_hidden">
+            <div id="message-container" class="chat__messages"></div>
+
+            <!-- Форма для отправки сообщений -->
+            <div class="chat__input-area">
+                <input id="message-input" class="chat__input" type="text" placeholder="Введите сообщение...">
+                <button id="send-btn" class="chat__button">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+
+</html>

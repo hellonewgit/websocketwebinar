@@ -1,0 +1,13 @@
+{
+  "name": "websocket-chat",
+  "version": "1.0.0",
+  "description": "Простой чат на WebSockets для образовательного вебинара",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.1"
+  }
+}
